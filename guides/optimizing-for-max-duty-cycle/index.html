@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mjbots.github.io/moteus/integration/">
+        <link rel="canonical" href="https://mjbots.github.io/moteus/guides/optimizing-for-max-duty-cycle/">
       
       
-        <link rel="prev" href="../guides/field-weakening/">
+        <link rel="prev" href="../dual-encoders/">
       
       
-        <link rel="next" href="python/">
+        <link rel="next" href="../field-weakening/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Integration - moteus Documentation</title>
+        <title>Optimizing for Maximum Duty Cycle - moteus Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,13 +51,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="../../style.css">
     
-      <link rel="stylesheet" href="../stylesheets/iv-viewer.min.css">
+      <link rel="stylesheet" href="../../stylesheets/iv-viewer.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#integration" class="md-skip">
+        <a href="#optimizing-for-maximum-duty-cycle" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integration
+              Optimizing for Maximum Duty Cycle
             
           </span>
         </div>
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -249,11 +249,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../guides/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -271,13 +273,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../integration/" class="md-tabs__link">
           
   
   
@@ -299,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../troubleshooting/" class="md-tabs__link">
+        <a href="../../troubleshooting/" class="md-tabs__link">
           
   
   
@@ -321,7 +321,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../reference/" class="md-tabs__link">
+        <a href="../../reference/" class="md-tabs__link">
           
   
   
@@ -357,7 +357,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -414,7 +414,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quick-start/" class="md-nav__link">
+      <a href="../../quick-start/" class="md-nav__link">
         
   
   
@@ -490,6 +490,8 @@
       
   
   
+    
+  
   
   
     
@@ -521,22 +523,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../guides/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -554,13 +557,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -580,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/mechanical-setup/" class="md-nav__link">
+      <a href="../mechanical-setup/" class="md-nav__link">
         
   
   
@@ -608,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/electrical-setup/" class="md-nav__link">
+      <a href="../electrical-setup/" class="md-nav__link">
         
   
   
@@ -636,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/software-installation/" class="md-nav__link">
+      <a href="../software-installation/" class="md-nav__link">
         
   
   
@@ -664,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -692,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/encoder-overview/" class="md-nav__link">
+      <a href="../encoder-overview/" class="md-nav__link">
         
   
   
@@ -720,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/calibration/" class="md-nav__link">
+      <a href="../calibration/" class="md-nav__link">
         
   
   
@@ -748,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/pid-tuning/" class="md-nav__link">
+      <a href="../pid-tuning/" class="md-nav__link">
         
   
   
@@ -776,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/control-modes/" class="md-nav__link">
+      <a href="../control-modes/" class="md-nav__link">
         
   
   
@@ -801,8 +804,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -819,20 +824,21 @@
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
             
   
   
@@ -850,7 +856,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -868,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/hall-effects/" class="md-nav__link">
+      <a href="../hall-effects/" class="md-nav__link">
         
   
   
@@ -896,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/dual-encoders/" class="md-nav__link">
+      <a href="../dual-encoders/" class="md-nav__link">
         
   
   
@@ -921,10 +927,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optimizing for Maximum Duty Cycle
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -940,6 +973,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tuning parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -952,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/field-weakening/" class="md-nav__link">
+      <a href="../field-weakening/" class="md-nav__link">
         
   
   
@@ -992,8 +1067,6 @@
       
   
   
-    
-  
   
   
     
@@ -1019,23 +1092,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../integration/" class="md-nav__link ">
               
   
   
@@ -1053,13 +1125,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1079,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/" class="md-nav__link">
+      <a href="../../integration/python/" class="md-nav__link">
         
   
   
@@ -1107,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cpp/" class="md-nav__link">
+      <a href="../../integration/cpp/" class="md-nav__link">
         
   
   
@@ -1135,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rust/" class="md-nav__link">
+      <a href="../../integration/rust/" class="md-nav__link">
         
   
   
@@ -1163,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="can-fd/" class="md-nav__link">
+      <a href="../../integration/can-fd/" class="md-nav__link">
         
   
   
@@ -1191,7 +1263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="uart/" class="md-nav__link">
+      <a href="../../integration/uart/" class="md-nav__link">
         
   
   
@@ -1239,13 +1311,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1255,7 +1324,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../platforms/" class="md-nav__link ">
+            <a href="../../platforms/" class="md-nav__link ">
               
   
   
@@ -1273,7 +1342,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1299,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/raspberry-pi/" class="md-nav__link">
+      <a href="../../platforms/raspberry-pi/" class="md-nav__link">
         
   
   
@@ -1327,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/jetson/" class="md-nav__link">
+      <a href="../../platforms/jetson/" class="md-nav__link">
         
   
   
@@ -1355,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/socketcan/" class="md-nav__link">
+      <a href="../../platforms/socketcan/" class="md-nav__link">
         
   
   
@@ -1383,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/arduino/" class="md-nav__link">
+      <a href="../../platforms/arduino/" class="md-nav__link">
         
   
   
@@ -1463,7 +1532,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../troubleshooting/" class="md-nav__link ">
+            <a href="../../troubleshooting/" class="md-nav__link ">
               
   
   
@@ -1507,7 +1576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/calibration/" class="md-nav__link">
+      <a href="../../troubleshooting/calibration/" class="md-nav__link">
         
   
   
@@ -1535,7 +1604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/no-motion/" class="md-nav__link">
+      <a href="../../troubleshooting/no-motion/" class="md-nav__link">
         
   
   
@@ -1563,7 +1632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/limited-torque/" class="md-nav__link">
+      <a href="../../troubleshooting/limited-torque/" class="md-nav__link">
         
   
   
@@ -1591,7 +1660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/gate-driver-faults/" class="md-nav__link">
+      <a href="../../troubleshooting/gate-driver-faults/" class="md-nav__link">
         
   
   
@@ -1619,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/timeout-mode-11/" class="md-nav__link">
+      <a href="../../troubleshooting/timeout-mode-11/" class="md-nav__link">
         
   
   
@@ -1647,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
+      <a href="../../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
         
   
   
@@ -1727,7 +1796,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../reference/" class="md-nav__link ">
+            <a href="../../reference/" class="md-nav__link ">
               
   
   
@@ -1771,7 +1840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/pinouts/" class="md-nav__link">
+      <a href="../../reference/pinouts/" class="md-nav__link">
         
   
   
@@ -1799,7 +1868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/encoders/" class="md-nav__link">
+      <a href="../../reference/encoders/" class="md-nav__link">
         
   
   
@@ -1827,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/client-tools/" class="md-nav__link">
+      <a href="../../reference/client-tools/" class="md-nav__link">
         
   
   
@@ -1855,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/configuration/" class="md-nav__link">
+      <a href="../../reference/configuration/" class="md-nav__link">
         
   
   
@@ -1883,7 +1952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/hardware/" class="md-nav__link">
+      <a href="../../reference/hardware/" class="md-nav__link">
         
   
   
@@ -1911,7 +1980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/firmware/" class="md-nav__link">
+      <a href="../../reference/firmware/" class="md-nav__link">
         
   
   
@@ -1939,7 +2008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/limits/" class="md-nav__link">
+      <a href="../../reference/limits/" class="md-nav__link">
         
   
   
@@ -1967,7 +2036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/theory/" class="md-nav__link">
+      <a href="../../reference/theory/" class="md-nav__link">
         
   
   
@@ -2055,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/python/" class="md-nav__link">
+      <a href="../../reference/python/" class="md-nav__link">
         
   
   
@@ -2083,7 +2152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/rust/" class="md-nav__link">
+      <a href="../../reference/rust/" class="md-nav__link">
         
   
   
@@ -2150,7 +2219,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../protocol/" class="md-nav__link ">
+            <a href="../../protocol/" class="md-nav__link ">
               
   
   
@@ -2194,7 +2263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/can/" class="md-nav__link">
+      <a href="../../protocol/can/" class="md-nav__link">
         
   
   
@@ -2222,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/registers/" class="md-nav__link">
+      <a href="../../protocol/registers/" class="md-nav__link">
         
   
   
@@ -2250,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/diagnostic/" class="md-nav__link">
+      <a href="../../protocol/diagnostic/" class="md-nav__link">
         
   
   
@@ -2313,10 +2382,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#host-platforms" class="md-nav__link">
+  <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Host Platforms
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tuning parameters
       
     </span>
   </a>
@@ -2343,22 +2423,23 @@
   
 
 
-<h1 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h1>
-<p>Integrate moteus with your software and hardware.</p>
-<ul>
-<li><a href="python/">Python Client</a> - Python client library</li>
-<li><a href="cpp/">C++ Client</a> - C++ client library</li>
-<li><a href="rust/">Rust Client</a> - Rust client library</li>
-<li><a href="can-fd/">Raw CAN-FD</a> - Direct CAN-FD protocol access</li>
-<li><a href="uart/">UART</a> - Logic level UART access</li>
-</ul>
-<h2 id="host-platforms">Host Platforms<a class="headerlink" href="#host-platforms" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../platforms/raspberry-pi/">Raspberry Pi</a> - Using moteus with Raspberry Pi</li>
-<li><a href="../platforms/jetson/">Nvidia Jetson</a> - Using moteus with Jetson boards</li>
-<li><a href="../platforms/socketcan/">socketcan</a> - Linux SocketCAN setup</li>
-<li><a href="../platforms/arduino/">Arduino</a> - Arduino integration</li>
-</ul>
+<h1 id="optimizing-for-maximum-duty-cycle">Optimizing for maximum duty cycle<a class="headerlink" href="#optimizing-for-maximum-duty-cycle" title="Permanent link">&para;</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>In some cases, it is important that moteus be able to achieve the maximum possible speed on a given motor without resorting to field weakening.  The controller is limited in how much of the supply voltage it can apply to the motor.  By definition the multiple that it can supply is less than 1.  This multiple is constrained by moteus's requirement to be able to sense the current flowing to the motor in order to perform field oriented control. Two factors bound this constraint:</p>
+<ol>
+<li>The current can only be sensed when the "low" side MOSFET is switched on.  Thus, the low-side MOSFET must be on long enough for ADC to trigger and complete its sampling process.</li>
+<li>The input to the ADC is a current sense amplifier (CSA) onboad moteus.  This amplifier has a gain dependent settling time that must be respected.  This settling time must complete <em>before</em> the ADC sampling process starts.</li>
+</ol>
+<h2 id="tuning-parameters">Tuning parameters<a class="headerlink" href="#tuning-parameters" title="Permanent link">&para;</a></h2>
+<p>To maximize the available duty cycle, there are two parameters that can be controlled.</p>
+<ol>
+<li>
+<p><code>servo.pwm_rate_hz</code>: The lower the PWM rate, the higher the available duty cycle.  Setting it to the minimum of 15000 Hz is the limit.  Lower PWM rates decrease the control update rate and decrease the peak power the board can support.</p>
+</li>
+<li>
+<p><code>drv8323.csa_gain</code>: The current sense amplifier gain, which can be one of [5, 10, 20, 40].  The default is 20.  Lowering this to 10 gives the maximum duty cycle benefit at the expense of increased current sense noise.  This will result in more audible noise from the system and lower available torque control bandwidth.</p>
+</li>
+</ol>
 
 
 
@@ -2414,16 +2495,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../javascripts/iv-viewer.min.js"></script>
+        <script src="../../javascripts/iv-viewer.min.js"></script>
       
-        <script src="../javascripts/image-zoom.js"></script>
+        <script src="../../javascripts/image-zoom.js"></script>
       
-        <script src="../javascripts/toc-collapse.js"></script>
+        <script src="../../javascripts/toc-collapse.js"></script>
       
     
   </body>

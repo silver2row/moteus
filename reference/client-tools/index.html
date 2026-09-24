@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -810,6 +810,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -913,6 +917,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optimizing for Maximum Duty Cycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/field-weakening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field Weakening
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -939,6 +999,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -1068,6 +1132,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../integration/rust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rust Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../integration/can-fd/" class="md-nav__link">
         
   
@@ -1076,6 +1168,34 @@
     
   
     Raw CAN-FD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integration/uart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UART
   
 
     
@@ -1125,7 +1245,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1147,14 +1267,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1847,10 +1967,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-can-fd-transport" class="md-nav__link">
+  <a href="#configuring-the-communications-transport" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring the CAN-FD transport
+        Configuring the communications transport
       
     </span>
   </a>
@@ -2017,6 +2137,8 @@
       
         
       
+        
+      
     
     
     
@@ -2082,6 +2204,34 @@
     
   
     Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rust
   
 
     
@@ -2390,10 +2540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-can-fd-transport" class="md-nav__link">
+  <a href="#configuring-the-communications-transport" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring the CAN-FD transport
+        Configuring the communications transport
       
     </span>
   </a>
@@ -2426,7 +2576,6 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3 -m moteus_gui.tview --target 1[,2,3]...
 </span></code></pre></div>
 <p>When running, the configuration for each can be modified in the left hand tab, and live telemetry values can be displayed or plotted from the right hand tab.  diagnostic mode commands may be issued in the bottom terminal window.</p>
-<p>A simple command and scripting language beyond the diagnostic protocol is available within the tview terminal window.</p>
 <h3 id="communicating-with-a-specific-device">Communicating with a specific device<a class="headerlink" href="#communicating-with-a-specific-device" title="Permanent link">&para;</a></h3>
 <p>If more than one device is available, commands can be sent to a specific device by prefixing the command with <code>ID&gt;</code>.  For instance, to send a stop command to ID #2, you can do:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>2&gt;d stop
@@ -2469,11 +2618,12 @@ configure <code>motor_position.rotor_to_output_ratio</code>.</p>
 <p>The moteus controller can locate positions within one revolution after being power cycled, and will start with the reported position being between -0.5 and 0.5.  The physical zero position can be set using the following command:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python3 -m moteus.moteus_tool --target 1 --zero-offset
 </span></code></pre></div>
-<h2 id="configuring-the-can-fd-transport">Configuring the CAN-FD transport<a class="headerlink" href="#configuring-the-can-fd-transport" title="Permanent link">&para;</a></h2>
+<h2 id="configuring-the-communications-transport">Configuring the communications transport<a class="headerlink" href="#configuring-the-communications-transport" title="Permanent link">&para;</a></h2>
 <p><code>moteus_tool</code> and <code>tview</code> can be configured to communicate with a
 moteus controller through a variety of transports.  By default, it
 will attempt to autodetect either a fdcanusb or socketcan interface.</p>
-<p>To force usage of a particular fdcanusb, you can use:</p>
+<p>To force usage of a particular fdcanusb or a logic level UART, you can
+use:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python3 -m moteus.moteus_tool --fdcanusb /path/to/fdcanusb
 </span></code></pre></div>
 <p>To force a particular python-can method, you can use:</p>
@@ -2483,6 +2633,9 @@ will attempt to autodetect either a fdcanusb or socketcan interface.</p>
 <code>--can-chan</code> specifies the "channel".</p>
 <p>Note, these are in addition to any other <code>moteus_tool</code> or <code>tview</code>
 options that may be desired.</p>
+<p>If a non-default baud rate is used with a logic level UART, then the baudrate can be specified with <code>--fdcanusb-baudrate</code>, like:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python3 -m moteus.moteus_tool --fdcanusb /dev/ttyUSB0 --fdcanusb-baudrate 115200
+</span></code></pre></div>
 
 
 
@@ -2541,7 +2694,7 @@ options that may be desired.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../javascripts/iv-viewer.min.js"></script>
       

@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mjbots.github.io/moteus/integration/">
+        <link rel="canonical" href="https://mjbots.github.io/moteus/reference/rust/">
       
       
-        <link rel="prev" href="../guides/field-weakening/">
+        <link rel="prev" href="../python/">
       
       
-        <link rel="next" href="python/">
+        <link rel="next" href="../../protocol/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Integration - moteus Documentation</title>
+        <title>Rust - moteus Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,13 +51,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="../../style.css">
     
-      <link rel="stylesheet" href="../stylesheets/iv-viewer.min.css">
+      <link rel="stylesheet" href="../../stylesheets/iv-viewer.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#integration" class="md-skip">
+        <a href="#rust-api-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integration
+              Rust
             
           </span>
         </div>
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -253,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../guides/" class="md-tabs__link">
+        <a href="../../guides/" class="md-tabs__link">
           
   
   
@@ -271,13 +271,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../integration/" class="md-tabs__link">
           
   
   
@@ -299,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../troubleshooting/" class="md-tabs__link">
+        <a href="../../troubleshooting/" class="md-tabs__link">
           
   
   
@@ -317,11 +315,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../reference/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -357,7 +357,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -414,7 +414,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quick-start/" class="md-nav__link">
+      <a href="../../quick-start/" class="md-nav__link">
         
   
   
@@ -536,7 +536,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../guides/" class="md-nav__link ">
+            <a href="../../guides/" class="md-nav__link ">
               
   
   
@@ -580,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/mechanical-setup/" class="md-nav__link">
+      <a href="../../guides/mechanical-setup/" class="md-nav__link">
         
   
   
@@ -608,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/electrical-setup/" class="md-nav__link">
+      <a href="../../guides/electrical-setup/" class="md-nav__link">
         
   
   
@@ -636,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/software-installation/" class="md-nav__link">
+      <a href="../../guides/software-installation/" class="md-nav__link">
         
   
   
@@ -664,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/configuration/" class="md-nav__link">
+      <a href="../../guides/configuration/" class="md-nav__link">
         
   
   
@@ -692,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/encoder-overview/" class="md-nav__link">
+      <a href="../../guides/encoder-overview/" class="md-nav__link">
         
   
   
@@ -720,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/calibration/" class="md-nav__link">
+      <a href="../../guides/calibration/" class="md-nav__link">
         
   
   
@@ -748,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/pid-tuning/" class="md-nav__link">
+      <a href="../../guides/pid-tuning/" class="md-nav__link">
         
   
   
@@ -776,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/control-modes/" class="md-nav__link">
+      <a href="../../guides/control-modes/" class="md-nav__link">
         
   
   
@@ -868,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/hall-effects/" class="md-nav__link">
+      <a href="../../guides/hall-effects/" class="md-nav__link">
         
   
   
@@ -896,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/dual-encoders/" class="md-nav__link">
+      <a href="../../guides/dual-encoders/" class="md-nav__link">
         
   
   
@@ -924,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
+      <a href="../../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
         
   
   
@@ -952,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/field-weakening/" class="md-nav__link">
+      <a href="../../guides/field-weakening/" class="md-nav__link">
         
   
   
@@ -992,8 +992,6 @@
       
   
   
-    
-  
   
   
     
@@ -1019,23 +1017,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../integration/" class="md-nav__link ">
               
   
   
@@ -1053,13 +1050,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1079,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/" class="md-nav__link">
+      <a href="../../integration/python/" class="md-nav__link">
         
   
   
@@ -1107,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cpp/" class="md-nav__link">
+      <a href="../../integration/cpp/" class="md-nav__link">
         
   
   
@@ -1135,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rust/" class="md-nav__link">
+      <a href="../../integration/rust/" class="md-nav__link">
         
   
   
@@ -1163,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="can-fd/" class="md-nav__link">
+      <a href="../../integration/can-fd/" class="md-nav__link">
         
   
   
@@ -1191,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="uart/" class="md-nav__link">
+      <a href="../../integration/uart/" class="md-nav__link">
         
   
   
@@ -1239,13 +1236,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1255,7 +1249,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../platforms/" class="md-nav__link ">
+            <a href="../../platforms/" class="md-nav__link ">
               
   
   
@@ -1273,7 +1267,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1299,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/raspberry-pi/" class="md-nav__link">
+      <a href="../../platforms/raspberry-pi/" class="md-nav__link">
         
   
   
@@ -1327,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/jetson/" class="md-nav__link">
+      <a href="../../platforms/jetson/" class="md-nav__link">
         
   
   
@@ -1355,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/socketcan/" class="md-nav__link">
+      <a href="../../platforms/socketcan/" class="md-nav__link">
         
   
   
@@ -1383,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/arduino/" class="md-nav__link">
+      <a href="../../platforms/arduino/" class="md-nav__link">
         
   
   
@@ -1463,7 +1457,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../troubleshooting/" class="md-nav__link ">
+            <a href="../../troubleshooting/" class="md-nav__link ">
               
   
   
@@ -1507,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/calibration/" class="md-nav__link">
+      <a href="../../troubleshooting/calibration/" class="md-nav__link">
         
   
   
@@ -1535,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/no-motion/" class="md-nav__link">
+      <a href="../../troubleshooting/no-motion/" class="md-nav__link">
         
   
   
@@ -1563,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/limited-torque/" class="md-nav__link">
+      <a href="../../troubleshooting/limited-torque/" class="md-nav__link">
         
   
   
@@ -1591,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/gate-driver-faults/" class="md-nav__link">
+      <a href="../../troubleshooting/gate-driver-faults/" class="md-nav__link">
         
   
   
@@ -1619,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/timeout-mode-11/" class="md-nav__link">
+      <a href="../../troubleshooting/timeout-mode-11/" class="md-nav__link">
         
   
   
@@ -1647,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
+      <a href="../../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
         
   
   
@@ -1679,6 +1673,8 @@
       
   
   
+    
+  
   
   
     
@@ -1712,22 +1708,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../reference/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1745,13 +1742,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1771,7 +1768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/pinouts/" class="md-nav__link">
+      <a href="../pinouts/" class="md-nav__link">
         
   
   
@@ -1799,7 +1796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/encoders/" class="md-nav__link">
+      <a href="../encoders/" class="md-nav__link">
         
   
   
@@ -1827,7 +1824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/client-tools/" class="md-nav__link">
+      <a href="../client-tools/" class="md-nav__link">
         
   
   
@@ -1855,7 +1852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -1883,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/hardware/" class="md-nav__link">
+      <a href="../hardware/" class="md-nav__link">
         
   
   
@@ -1911,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/firmware/" class="md-nav__link">
+      <a href="../firmware/" class="md-nav__link">
         
   
   
@@ -1939,7 +1936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/limits/" class="md-nav__link">
+      <a href="../limits/" class="md-nav__link">
         
   
   
@@ -1967,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/theory/" class="md-nav__link">
+      <a href="../theory/" class="md-nav__link">
         
   
   
@@ -1992,8 +1989,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2006,20 +2005,21 @@
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_10" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_10" checked>
         
           
-          <label class="md-nav__link" for="__nav_5_10" id="__nav_5_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_10" id="__nav_5_10_label" tabindex="">
             
   
   
@@ -2037,7 +2037,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2055,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         
   
   
@@ -2080,10 +2080,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../reference/rust/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rust
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2099,6 +2126,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#moteus-crate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moteus crate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="moteus crate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controllers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands-and-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands and Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport Layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-backends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport Backends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics-and-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostics and Utilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factory-and-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factory and Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moteus-protocol-crate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moteus-protocol crate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Flags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Guide
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2137,10 +2300,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -2150,7 +2316,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../protocol/" class="md-nav__link ">
+            <a href="../../protocol/" class="md-nav__link ">
               
   
   
@@ -2168,7 +2334,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_11" id="__nav_5_11_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5_11" id="__nav_5_11_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2194,7 +2360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/can/" class="md-nav__link">
+      <a href="../../protocol/can/" class="md-nav__link">
         
   
   
@@ -2222,7 +2388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/registers/" class="md-nav__link">
+      <a href="../../protocol/registers/" class="md-nav__link">
         
   
   
@@ -2250,7 +2416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/diagnostic/" class="md-nav__link">
+      <a href="../../protocol/diagnostic/" class="md-nav__link">
         
   
   
@@ -2313,10 +2479,115 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#host-platforms" class="md-nav__link">
+  <a href="#moteus-crate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Host Platforms
+        moteus crate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="moteus crate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controllers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands-and-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands and Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport Layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-backends" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport Backends
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics-and-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostics and Utilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factory-and-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factory and Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moteus-protocol-crate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moteus-protocol crate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Flags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Guide
       
     </span>
   </a>
@@ -2343,22 +2614,152 @@
   
 
 
-<h1 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h1>
-<p>Integrate moteus with your software and hardware.</p>
+<h1 id="rust-api-reference">Rust API Reference<a class="headerlink" href="#rust-api-reference" title="Permanent link">&para;</a></h1>
+<p>The moteus Rust library is split into two crates. Full auto-generated documentation is available on docs.rs.</p>
 <ul>
-<li><a href="python/">Python Client</a> - Python client library</li>
-<li><a href="cpp/">C++ Client</a> - C++ client library</li>
-<li><a href="rust/">Rust Client</a> - Rust client library</li>
-<li><a href="can-fd/">Raw CAN-FD</a> - Direct CAN-FD protocol access</li>
-<li><a href="uart/">UART</a> - Logic level UART access</li>
+<li><a href="https://docs.rs/moteus/"><strong>moteus</strong> on docs.rs</a> — High-level controller API</li>
+<li><a href="https://docs.rs/moteus-protocol/"><strong>moteus-protocol</strong> on docs.rs</a> — Low-level protocol types (<code>no_std</code> compatible)</li>
 </ul>
-<h2 id="host-platforms">Host Platforms<a class="headerlink" href="#host-platforms" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../platforms/raspberry-pi/">Raspberry Pi</a> - Using moteus with Raspberry Pi</li>
-<li><a href="../platforms/jetson/">Nvidia Jetson</a> - Using moteus with Jetson boards</li>
-<li><a href="../platforms/socketcan/">socketcan</a> - Linux SocketCAN setup</li>
-<li><a href="../platforms/arduino/">Arduino</a> - Arduino integration</li>
-</ul>
+<p>This page provides a curated summary of the key types and their roles.</p>
+<h2 id="moteus-crate">moteus crate<a class="headerlink" href="#moteus-crate" title="Permanent link">&para;</a></h2>
+<h3 id="controllers">Controllers<a class="headerlink" href="#controllers" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.BlockingController.html"><code>BlockingController</code></a></dt>
+<dd>Synchronous controller with auto-discovered transport.
+Simplest API for single-threaded use.
+Provides <code>set_position()</code>, <code>set_stop()</code> and other blocking methods that send a command and return a <code>QueryResult</code>.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.AsyncController.html"><code>AsyncController</code></a></dt>
+<dd>Async controller for use with <code>async</code>/<code>.await</code>.
+Supports both wrapped-blocking and true async (tokio feature) transports.
+Same method set as <code>BlockingController</code>, but all methods return futures.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.Controller.html"><code>Controller</code></a></dt>
+<dd>Low-level frame builder.
+Produces <code>Command</code> values without any transport — use for custom transports or embedded systems.
+Provides <code>make_position_command()</code>, <code>make_stop()</code>, <code>parse_query()</code>, etc.</dd>
+</dl>
+<h3 id="commands-and-results">Commands and Results<a class="headerlink" href="#commands-and-results" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.Command.html"><code>Command</code></a></dt>
+<dd>A routed moteus message combining destination/source/prefix with serialized multiplex protocol data.
+Produced by <code>Controller::make_*()</code> methods.
+Convert to a wire-level <code>CanFdFrame</code> via <code>into_frame()</code>.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.PositionCommand.html"><code>command::PositionCommand</code></a></dt>
+<dd>Position mode parameters: position, velocity, feedforward torque, torque limits, PID scales, acceleration/velocity limits, and more.
+Uses a builder pattern — chain <code>.position()</code>, <code>.velocity()</code>, <code>.maximum_torque()</code>, etc.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.StopCommand.html"><code>command::StopCommand</code></a></dt>
+<dd>Stop command that clears faults and sets the controller to stopped mode.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.CurrentCommand.html"><code>command::CurrentCommand</code></a></dt>
+<dd>Direct current (d/q axis) control command.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.VFOCCommand.html"><code>command::VFOCCommand</code></a></dt>
+<dd>Voltage FOC (field-oriented control) command.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.StayWithinCommand.html"><code>command::StayWithinCommand</code></a></dt>
+<dd>Stay-within bounds command — the controller maintains position within specified limits.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/command/struct.ZeroVelocityCommand.html"><code>command::ZeroVelocityCommand</code></a></dt>
+<dd>Zero velocity mode command — the controller actively holds zero velocity.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/query/struct.QueryFormat.html"><code>query::QueryFormat</code></a></dt>
+<dd>Specifies which registers to query and at what resolution.
+Customize to request additional telemetry fields beyond the defaults (mode, position, velocity, torque).</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/query/struct.QueryResult.html"><code>query::QueryResult</code></a></dt>
+<dd>Parsed response containing mode, position, velocity, torque, voltage, temperature, fault code, and other telemetry fields.</dd>
+</dl>
+<h3 id="transport-layer">Transport Layer<a class="headerlink" href="#transport-layer" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.Transport.html"><code>Transport</code></a></dt>
+<dd>Manages communication channels to moteus controllers.
+Provides <code>cycle()</code> (batch send/receive), <code>write()</code> (fire-and-forget), <code>read()</code> (receive unsolicited), and <code>flush_read()</code>, matching the Python API.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.TransportOptions.html"><code>TransportOptions</code></a></dt>
+<dd>Configuration for transport auto-discovery.
+Set preferred interfaces, timeouts, and other options.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/trait.TransportOps.html"><code>TransportOps</code></a></dt>
+<dd>Trait for blocking transport implementations.
+Implement this to create custom transport backends.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.AsyncTransport.html"><code>AsyncTransport</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Async transport wrapper for true non-blocking I/O with tokio.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.AsyncTransportOptions.html"><code>AsyncTransportOptions</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Configuration for async transport creation.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/trait.AsyncTransportOps.html"><code>AsyncTransportOps</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Trait for async transport implementations.</dd>
+</dl>
+<h3 id="transport-backends">Transport Backends<a class="headerlink" href="#transport-backends" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/transport/fdcanusb/struct.Fdcanusb.html"><code>transport::fdcanusb::Fdcanusb</code></a></dt>
+<dd>fdcanusb serial (CDC) transport.
+Auto-detected when an fdcanusb device is connected via USB.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/transport/socketcan/struct.SocketCan.html"><code>transport::socketcan::SocketCan</code></a></dt>
+<dd>Linux SocketCAN transport.
+Uses the kernel CAN interface (e.g., <code>can0</code>).</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/transport/async_fdcanusb/struct.AsyncFdcanusb.html"><code>transport::async_fdcanusb::AsyncFdcanusb</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Async fdcanusb transport using tokio-serial.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/transport/async_socketcan/struct.AsyncSocketCan.html"><code>transport::async_socketcan::AsyncSocketCan</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Async SocketCAN transport using tokio.</dd>
+</dl>
+<h3 id="diagnostics-and-utilities">Diagnostics and Utilities<a class="headerlink" href="#diagnostics-and-utilities" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.DiagnosticStream.html"><code>DiagnosticStream</code></a></dt>
+<dd>Blocking diagnostic protocol stream for reading and writing configuration values, firmware info, and other diagnostic commands.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.AsyncDiagnosticStream.html"><code>AsyncDiagnosticStream</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Async variant of the diagnostic stream.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/move_to/fn.move_to.html"><code>move_to()</code></a></dt>
+<dd>Free function for coordinated multi-servo moves.
+Moves multiple servos to target positions simultaneously, waiting for all to arrive.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/move_to/fn.async_move_to.html"><code>async_move_to()</code></a> <em>(requires <code>tokio</code> feature)</em></dt>
+<dd>Async variant of coordinated multi-servo moves.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/enum.Error.html"><code>Error</code></a></dt>
+<dd>Error enum with variants: <code>Io</code>, <code>Timeout</code>, <code>NoResponse</code>, <code>Fault</code>, <code>InvalidResponse</code>, <code>NotConnected</code>, <code>DeviceNotFound</code>, <code>Protocol</code>.
+Implements <code>std::error::Error</code> and <code>From&lt;std::io::Error&gt;</code>.</dd>
+</dl>
+<h3 id="factory-and-discovery">Factory and Discovery<a class="headerlink" href="#factory-and-discovery" title="Permanent link">&para;</a></h3>
+<dl>
+<dt><a href="https://docs.rs/moteus/latest/moteus/fn.get_singleton_transport.html"><code>get_singleton_transport()</code></a></dt>
+<dd>Returns a shared global transport instance.
+Creates the transport on first call using auto-discovery.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/fn.create_default_transport.html"><code>create_default_transport()</code></a></dt>
+<dd>Creates a new transport with default auto-discovery settings.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/fn.register.html"><code>register()</code></a></dt>
+<dd>Register a custom transport factory for auto-discovery.
+Allows third-party transport backends to participate in automatic transport selection.</dd>
+<dt><a href="https://docs.rs/moteus/latest/moteus/struct.DeviceAddress.html"><code>DeviceAddress</code></a></dt>
+<dd>Address a device by CAN ID, UUID, or both.
+UUID-based addressing enables automatic ID resolution on the bus.</dd>
+</dl>
+<h2 id="moteus-protocol-crate">moteus-protocol crate<a class="headerlink" href="#moteus-protocol-crate" title="Permanent link">&para;</a></h2>
+<p>This crate is <code>no_std</code> compatible (with optional <code>std</code> feature) and provides the wire protocol types:</p>
+<dl>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/struct.CanFdFrame.html"><code>CanFdFrame</code></a></dt>
+<dd>Raw CAN-FD frame with <code>arbitration_id</code>, <code>data</code>, <code>size</code>, <code>brs</code>, and <code>fdcan</code> fields.
+Contains no routing information — routing is handled by <code>Command</code> in the moteus crate.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/enum.Register.html"><code>Register</code></a></dt>
+<dd>Enum of all moteus register addresses (mode, position, velocity, torque, voltage, temperature, fault, encoder registers, etc.).</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/enum.Resolution.html"><code>Resolution</code></a></dt>
+<dd>Register value resolution: <code>Ignore</code>, <code>Int8</code>, <code>Int16</code>, <code>Int32</code>, <code>Float</code>.
+Controls the precision and wire size of register values.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/enum.Mode.html"><code>Mode</code></a></dt>
+<dd>Controller operating mode enum: <code>Stopped</code>, <code>Fault</code>, <code>Position</code>, <code>ZeroVelocity</code>, <code>StayWithin</code>, <code>Current</code>, etc.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/enum.HomeState.html"><code>HomeState</code></a></dt>
+<dd>Homing state enum: <code>Relative</code>, <code>Rotor</code>, <code>Output</code>.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/struct.Scaling.html"><code>Scaling</code></a></dt>
+<dd>Register scaling helpers for encoding/decoding fixed-point values to/from wire format.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/command/index.html"><code>command::*</code></a></dt>
+<dd>Command structs and serialization for all command types.
+Each command type has a corresponding format struct that controls which fields are sent and at what resolution.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/query/index.html"><code>query::*</code></a></dt>
+<dd>Query format and result types with deserialization.
+<code>QueryFormat</code> controls which registers are requested; <code>QueryResult</code> holds the parsed response.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/fn.calculate_arbitration_id.html"><code>calculate_arbitration_id()</code></a></dt>
+<dd>Compute a CAN arbitration ID from source, destination, prefix, and reply flag.</dd>
+<dt><a href="https://docs.rs/moteus-protocol/latest/moteus_protocol/fn.parse_arbitration_id.html"><code>parse_arbitration_id()</code></a></dt>
+<dd>Parse source, destination, prefix, and reply flag from a CAN arbitration ID.</dd>
+</dl>
+<h2 id="feature-flags">Feature Flags<a class="headerlink" href="#feature-flags" title="Permanent link">&para;</a></h2>
+<dl>
+<dt><code>tokio</code></dt>
+<dd>Enables true async transports using tokio.
+Adds <code>AsyncFdcanusb</code>, <code>AsyncSocketCan</code>, <code>AsyncTransport</code>, <code>AsyncDiagnosticStream</code>, and <code>async_move_to()</code>.</dd>
+<dt><code>clap</code></dt>
+<dd>Enables <code>add_transport_args()</code> for CLI argument parsing with clap.</dd>
+</dl>
+<h2 id="integration-guide">Integration Guide<a class="headerlink" href="#integration-guide" title="Permanent link">&para;</a></h2>
+<p>For usage examples and tutorials, see the <a href="../../integration/rust/">Rust Client integration guide</a>.</p>
 
 
 
@@ -2414,16 +2815,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../javascripts/iv-viewer.min.js"></script>
+        <script src="../../javascripts/iv-viewer.min.js"></script>
       
-        <script src="../javascripts/image-zoom.js"></script>
+        <script src="../../javascripts/image-zoom.js"></script>
       
-        <script src="../javascripts/toc-collapse.js"></script>
+        <script src="../../javascripts/toc-collapse.js"></script>
       
     
   </body>

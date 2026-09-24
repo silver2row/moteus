@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mjbots.github.io/moteus/integration/">
+        <link rel="canonical" href="https://mjbots.github.io/moteus/integration/uart/">
       
       
-        <link rel="prev" href="../guides/field-weakening/">
+        <link rel="prev" href="../can-fd/">
       
       
-        <link rel="next" href="python/">
+        <link rel="next" href="../../platforms/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Integration - moteus Documentation</title>
+        <title>UART - moteus Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,13 +51,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="../../style.css">
     
-      <link rel="stylesheet" href="../stylesheets/iv-viewer.min.css">
+      <link rel="stylesheet" href="../../stylesheets/iv-viewer.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#integration" class="md-skip">
+        <a href="#uart" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-header__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integration
+              UART
             
           </span>
         </div>
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -253,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../guides/" class="md-tabs__link">
+        <a href="../../guides/" class="md-tabs__link">
           
   
   
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -299,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../troubleshooting/" class="md-tabs__link">
+        <a href="../../troubleshooting/" class="md-tabs__link">
           
   
   
@@ -321,7 +321,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../reference/" class="md-tabs__link">
+        <a href="../../reference/" class="md-tabs__link">
           
   
   
@@ -357,7 +357,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
+    <a href="../.." title="moteus Documentation" class="md-nav__button md-logo" aria-label="moteus Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -414,7 +414,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quick-start/" class="md-nav__link">
+      <a href="../../quick-start/" class="md-nav__link">
         
   
   
@@ -536,7 +536,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../guides/" class="md-nav__link ">
+            <a href="../../guides/" class="md-nav__link ">
               
   
   
@@ -580,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/mechanical-setup/" class="md-nav__link">
+      <a href="../../guides/mechanical-setup/" class="md-nav__link">
         
   
   
@@ -608,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/electrical-setup/" class="md-nav__link">
+      <a href="../../guides/electrical-setup/" class="md-nav__link">
         
   
   
@@ -636,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/software-installation/" class="md-nav__link">
+      <a href="../../guides/software-installation/" class="md-nav__link">
         
   
   
@@ -664,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/configuration/" class="md-nav__link">
+      <a href="../../guides/configuration/" class="md-nav__link">
         
   
   
@@ -692,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/encoder-overview/" class="md-nav__link">
+      <a href="../../guides/encoder-overview/" class="md-nav__link">
         
   
   
@@ -720,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/calibration/" class="md-nav__link">
+      <a href="../../guides/calibration/" class="md-nav__link">
         
   
   
@@ -748,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/pid-tuning/" class="md-nav__link">
+      <a href="../../guides/pid-tuning/" class="md-nav__link">
         
   
   
@@ -776,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/control-modes/" class="md-nav__link">
+      <a href="../../guides/control-modes/" class="md-nav__link">
         
   
   
@@ -868,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/hall-effects/" class="md-nav__link">
+      <a href="../../guides/hall-effects/" class="md-nav__link">
         
   
   
@@ -896,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/dual-encoders/" class="md-nav__link">
+      <a href="../../guides/dual-encoders/" class="md-nav__link">
         
   
   
@@ -924,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
+      <a href="../../guides/optimizing-for-max-duty-cycle/" class="md-nav__link">
         
   
   
@@ -952,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/field-weakening/" class="md-nav__link">
+      <a href="../../guides/field-weakening/" class="md-nav__link">
         
   
   
@@ -1035,7 +1035,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1053,7 +1053,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1079,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python/" class="md-nav__link">
+      <a href="../python/" class="md-nav__link">
         
   
   
@@ -1107,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cpp/" class="md-nav__link">
+      <a href="../cpp/" class="md-nav__link">
         
   
   
@@ -1135,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rust/" class="md-nav__link">
+      <a href="../rust/" class="md-nav__link">
         
   
   
@@ -1163,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="can-fd/" class="md-nav__link">
+      <a href="../can-fd/" class="md-nav__link">
         
   
   
@@ -1188,10 +1188,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="uart/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UART
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1207,6 +1234,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-with-moteus-tools-and-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage with moteus tools and library
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caveats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caveats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reconfiguring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addressing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Addressing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-bus-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-bus topology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1255,7 +1396,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../platforms/" class="md-nav__link ">
+            <a href="../../platforms/" class="md-nav__link ">
               
   
   
@@ -1299,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/raspberry-pi/" class="md-nav__link">
+      <a href="../../platforms/raspberry-pi/" class="md-nav__link">
         
   
   
@@ -1327,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/jetson/" class="md-nav__link">
+      <a href="../../platforms/jetson/" class="md-nav__link">
         
   
   
@@ -1355,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/socketcan/" class="md-nav__link">
+      <a href="../../platforms/socketcan/" class="md-nav__link">
         
   
   
@@ -1383,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platforms/arduino/" class="md-nav__link">
+      <a href="../../platforms/arduino/" class="md-nav__link">
         
   
   
@@ -1463,7 +1604,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../troubleshooting/" class="md-nav__link ">
+            <a href="../../troubleshooting/" class="md-nav__link ">
               
   
   
@@ -1507,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/calibration/" class="md-nav__link">
+      <a href="../../troubleshooting/calibration/" class="md-nav__link">
         
   
   
@@ -1535,7 +1676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/no-motion/" class="md-nav__link">
+      <a href="../../troubleshooting/no-motion/" class="md-nav__link">
         
   
   
@@ -1563,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/limited-torque/" class="md-nav__link">
+      <a href="../../troubleshooting/limited-torque/" class="md-nav__link">
         
   
   
@@ -1591,7 +1732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/gate-driver-faults/" class="md-nav__link">
+      <a href="../../troubleshooting/gate-driver-faults/" class="md-nav__link">
         
   
   
@@ -1619,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/timeout-mode-11/" class="md-nav__link">
+      <a href="../../troubleshooting/timeout-mode-11/" class="md-nav__link">
         
   
   
@@ -1647,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
+      <a href="../../troubleshooting/overvoltage-fault-34/" class="md-nav__link">
         
   
   
@@ -1727,7 +1868,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../reference/" class="md-nav__link ">
+            <a href="../../reference/" class="md-nav__link ">
               
   
   
@@ -1771,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/pinouts/" class="md-nav__link">
+      <a href="../../reference/pinouts/" class="md-nav__link">
         
   
   
@@ -1799,7 +1940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/encoders/" class="md-nav__link">
+      <a href="../../reference/encoders/" class="md-nav__link">
         
   
   
@@ -1827,7 +1968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/client-tools/" class="md-nav__link">
+      <a href="../../reference/client-tools/" class="md-nav__link">
         
   
   
@@ -1855,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/configuration/" class="md-nav__link">
+      <a href="../../reference/configuration/" class="md-nav__link">
         
   
   
@@ -1883,7 +2024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/hardware/" class="md-nav__link">
+      <a href="../../reference/hardware/" class="md-nav__link">
         
   
   
@@ -1911,7 +2052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/firmware/" class="md-nav__link">
+      <a href="../../reference/firmware/" class="md-nav__link">
         
   
   
@@ -1939,7 +2080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/limits/" class="md-nav__link">
+      <a href="../../reference/limits/" class="md-nav__link">
         
   
   
@@ -1967,7 +2108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/theory/" class="md-nav__link">
+      <a href="../../reference/theory/" class="md-nav__link">
         
   
   
@@ -2055,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/python/" class="md-nav__link">
+      <a href="../../reference/python/" class="md-nav__link">
         
   
   
@@ -2083,7 +2224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/rust/" class="md-nav__link">
+      <a href="../../reference/rust/" class="md-nav__link">
         
   
   
@@ -2150,7 +2291,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../protocol/" class="md-nav__link ">
+            <a href="../../protocol/" class="md-nav__link ">
               
   
   
@@ -2194,7 +2335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/can/" class="md-nav__link">
+      <a href="../../protocol/can/" class="md-nav__link">
         
   
   
@@ -2222,7 +2363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/registers/" class="md-nav__link">
+      <a href="../../protocol/registers/" class="md-nav__link">
         
   
   
@@ -2250,7 +2391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../protocol/diagnostic/" class="md-nav__link">
+      <a href="../../protocol/diagnostic/" class="md-nav__link">
         
   
   
@@ -2313,13 +2454,96 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#host-platforms" class="md-nav__link">
+  <a href="#default-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Host Platforms
+        Default configuration
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-with-moteus-tools-and-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage with moteus tools and library
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caveats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caveats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reconfiguring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addressing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Addressing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-bus-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-bus topology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2343,22 +2567,107 @@
   
 
 
-<h1 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h1>
-<p>Integrate moteus with your software and hardware.</p>
+<h1 id="uart">UART<a class="headerlink" href="#uart" title="Permanent link">&para;</a></h1>
+<p>In systems where CAN-FD is not available, moteus can be commanded and monitored over a TTL level UART connection.</p>
+<h2 id="default-configuration">Default configuration<a class="headerlink" href="#default-configuration" title="Permanent link">&para;</a></h2>
+<p>By default, moteus controllers with a sufficiently new firmware version have the following pins configured for that purpose.</p>
 <ul>
-<li><a href="python/">Python Client</a> - Python client library</li>
-<li><a href="cpp/">C++ Client</a> - C++ client library</li>
-<li><a href="rust/">Rust Client</a> - Rust client library</li>
-<li><a href="can-fd/">Raw CAN-FD</a> - Direct CAN-FD protocol access</li>
-<li><a href="uart/">UART</a> - Logic level UART access</li>
+<li><a href="../../reference/pinouts/#moteus-r4">moteus-r4</a>: aux2 - JST ZH-4</li>
+<li>A - Host TX / moteus RX</li>
+<li>B - Host RX / moteus TX</li>
+<li><a href="../../reference/pinouts/#moteus-c1">moteus-c1</a>: aux2 - JST GH-7</li>
+<li>C - Host RX / moteus TX</li>
+<li>D - Host TX / moteus RX</li>
+<li><a href="../../reference/pinouts/#moteus-n1">moteus-n1</a>/<a href="../../reference/pinouts/#moteus-x1">moteus-x1</a>: aux1 - JST GH-8</li>
+<li>D - Host TX / moteus RX</li>
+<li>E - Host RX / moteus TX</li>
 </ul>
-<h2 id="host-platforms">Host Platforms<a class="headerlink" href="#host-platforms" title="Permanent link">&para;</a></h2>
+<p>Serial parameters:</p>
 <ul>
-<li><a href="../platforms/raspberry-pi/">Raspberry Pi</a> - Using moteus with Raspberry Pi</li>
-<li><a href="../platforms/jetson/">Nvidia Jetson</a> - Using moteus with Jetson boards</li>
-<li><a href="../platforms/socketcan/">socketcan</a> - Linux SocketCAN setup</li>
-<li><a href="../platforms/arduino/">Arduino</a> - Arduino integration</li>
+<li>Baudrate: 921600</li>
+<li>Data bits: 8</li>
+<li>Stop bits: 1</li>
+<li>Parity: None</li>
 </ul>
+<p>To use these pins for any other purpose, the appropriate <a href="../../reference/configuration/#aux12uartmode"><code>aux[12].uart.mode</code></a> must be set to "Disabled (0)".</p>
+<h2 id="protocol">Protocol<a class="headerlink" href="#protocol" title="Permanent link">&para;</a></h2>
+<p>In this mode, moteus acts as if it were a fdcanusb device on the UART.  The moteus python, C++, and rust libraries can be used directly if the operating system device name for the UART is given instead of the fdcanusb.  The only difference is that moteus permits checksums on command lines and always emits checksums on response lines.  Once any command has been sent with a checksum, all further commands require a checksum.</p>
+<p>The checksum uses the following format:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>data line *XX
+</span></code></pre></div>
+<p>Where the '*' character is followed by two hexadecimal digits.  Those are the CRC-8 using polynomial 0x97.  Sample calculation routines are:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">C++</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">_CRC8_TABLE</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x97</span><span class="p">,</span> <span class="mh">0xb9</span><span class="p">,</span> <span class="mh">0x2e</span><span class="p">,</span> <span class="mh">0xe5</span><span class="p">,</span> <span class="mh">0x72</span><span class="p">,</span> <span class="mh">0x5c</span><span class="p">,</span> <span class="mh">0xcb</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="mh">0x5d</span><span class="p">,</span> <span class="mh">0xca</span><span class="p">,</span> <span class="mh">0xe4</span><span class="p">,</span> <span class="mh">0x73</span><span class="p">,</span> <span class="mh">0xb8</span><span class="p">,</span> <span class="mh">0x2f</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x96</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">compute_crc8</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="sd">"""Compute CRC-8 using polynomial 0x97, nybble-at-a-time."""</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">crc</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">crc</span> <span class="o">=</span> <span class="n">_CRC8_TABLE</span><span class="p">[((</span><span class="n">crc</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">^</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">))</span> <span class="o">&amp;</span> <span class="mh">0x0f</span><span class="p">]</span> <span class="o">^</span> <span class="p">((</span><span class="n">crc</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">crc</span> <span class="o">=</span> <span class="n">_CRC8_TABLE</span><span class="p">[((</span><span class="n">crc</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">^</span> <span class="p">(</span><span class="n">b</span> <span class="o">&amp;</span> <span class="mh">0x0f</span><span class="p">))</span> <span class="o">&amp;</span> <span class="mh">0x0f</span><span class="p">]</span> <span class="o">^</span> <span class="p">((</span><span class="n">crc</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="k">return</span> <span class="n">crc</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">static</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">kCrc8Table</span><span class="p">[</span><span class="mi">16</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="mh">0x97</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb9</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2e</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x72</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5c</span><span class="p">,</span><span class="w"> </span><span class="mh">0xcb</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="mh">0x5d</span><span class="p">,</span><span class="w"> </span><span class="mh">0xca</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x73</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x01</span><span class="p">,</span><span class="w"> </span><span class="mh">0x96</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">};</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ComputeCrc8</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">len</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">crc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">len</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="n">crc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kCrc8Table</span><span class="p">[((</span><span class="n">crc</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0f</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">crc</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="n">crc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kCrc8Table</span><span class="p">[((</span><span class="n">crc</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0f</span><span class="p">))</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0f</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">crc</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">crc</span><span class="p">;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="usage-with-moteus-tools-and-library">Usage with moteus tools and library<a class="headerlink" href="#usage-with-moteus-tools-and-library" title="Permanent link">&para;</a></h2>
+<p>To use moteus_tool or tview with a UART connection, you must specify the path to the UART device on the command line:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python<span class="w"> </span>-m<span class="w"> </span>moteus_gui.tview<span class="w"> </span>--fdcanusb<span class="w"> </span>/dev/ttyUSB0
+</span></code></pre></div>
+<p>or:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>-m<span class="w"> </span>moteus.moteus_tool<span class="w"> </span>--fdcanusb<span class="w"> </span>/dev/ttyUSB0<span class="w"> </span>-t<span class="w"> </span><span class="m">1</span><span class="w"> </span>--info
+</span></code></pre></div>
+<p>When integrating with the python library, you must manually construct a transport:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">fdcanusb</span> <span class="o">=</span> <span class="n">moteus</span><span class="o">.</span><span class="n">Fdcanusb</span><span class="p">(</span><span class="s1">'/dev/ttyUSB0'</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">c</span> <span class="o">=</span> <span class="n">moteus</span><span class="o">.</span><span class="n">Controller</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">transport</span><span class="o">=</span><span class="n">fdcanusb</span><span class="p">)</span>
+</span></code></pre></div>
+<p>or for C++</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">using</span><span class="w"> </span><span class="n">mjbots</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">moteus</span><span class="o">::</span><span class="n">Controller</span><span class="w"> </span><span class="nf">controller</span><span class="p">([]()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="n">moteus</span><span class="o">::</span><span class="n">Controller</span><span class="o">::</span><span class="n">Options</span><span class="w"> </span><span class="n">options</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="n">options</span><span class="p">.</span><span class="n">transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">moteus</span><span class="o">::</span><span class="n">Fdcanusb</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"/dev/ttyUSB0"</span><span class="p">);</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">options</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}());</span>
+</span></code></pre></div>
+<p>or for rust</p>
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">let</span><span class="w"> </span><span class="n">transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">moteus</span><span class="p">::</span><span class="n">Fdcanusb</span><span class="p">::</span><span class="n">open</span><span class="p">(</span><span class="s">"/dev/ttyUSB0"</span><span class="p">)</span><span class="o">?</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">moteus</span><span class="p">::</span><span class="n">BlockingController</span><span class="p">::</span><span class="n">with_transport</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">transport</span><span class="p">);</span>
+</span></code></pre></div>
+<p>For embedded (no_std) rust hosts, the <code>moteus-protocol</code> crate provides an allocation-free codec for this protocol in its <code>fdcanusb</code> module.</p>
+<p>For usage with Arduino, see that <a href="../../platforms/arduino/">platform integration reference</a>.</p>
+<h2 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h2>
+<h3 id="reconfiguring">Reconfiguring<a class="headerlink" href="#reconfiguring" title="Permanent link">&para;</a></h3>
+<p>If a UART is the only means of communication, it can be challenging to configure the UART pins to a different port or a different baud rate. As with nearly all moteus configurable values, configuration changes take place <em>immediately</em>.  Thus it is recommended to first configure the new port location.  If the new port is on a lower number aux port, as soon as it is configured it will become the only means of control.  Then the host can be switched to that port in order to save configuration and reconfigure the original UART pins.</p>
+<p>Similarly, if an error is present on a given aux port configuration, then that will disable UART control along with all other functions on that aux port, even if the error is associated with a different pin on that aux port.  It may be necessary to power cycle the device or use CAN-FD to restore control.</p>
+<p><strong>Note</strong>: If the baud rate is changed from the default 921600 and moteus client side tools are used, the <code>--fdcanusb-baudrate</code> option can be used to specify the correct value.  See the <a href="../../reference/client-tools/#configuring-the-communications-transport">Client Tools Reference</a></p>
+<h3 id="addressing">Addressing<a class="headerlink" href="#addressing" title="Permanent link">&para;</a></h3>
+<p>moteus emulates a subset of the fdcanusb protocol, including any configured ID and CAN prefix.  Thus if you change <code>id.id</code> or <code>can.prefix</code>, you will need to use the correct CAN IDs and prefixes in further communication with the device.</p>
+<h3 id="non-bus-topology">Non-bus topology<a class="headerlink" href="#non-bus-topology" title="Permanent link">&para;</a></h3>
+<p>When using UART control, only a single moteus device can be connected to a single host UART port.</p>
+<h3 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">&para;</a></h3>
+<p>It is not possible to flash new firmware using the UART transport.  Only CAN-FD and the SWD port with a st-link are supported.</p>
 
 
 
@@ -2414,16 +2723,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../javascripts/iv-viewer.min.js"></script>
+        <script src="../../javascripts/iv-viewer.min.js"></script>
       
-        <script src="../javascripts/image-zoom.js"></script>
+        <script src="../../javascripts/image-zoom.js"></script>
       
-        <script src="../javascripts/toc-collapse.js"></script>
+        <script src="../../javascripts/toc-collapse.js"></script>
       
     
   </body>
